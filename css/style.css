@@ -23,41 +23,12 @@
   .main-nav a:visited {
     color: #675a85; }
 
-  /* -- tablet intro -- */
-  .intro p {
-    display: inline-block;
-    float: left;
-    padding: 0;
-    margin: 0;
-    width: 40%;
-    margin-left: 7%;
-    margin-right: 3%;
-    font-size: 1.25em;
-    text-align: left; }
-
-  .intro img {
-    display: inline-block;
-    float: right;
-    padding: 0;
-    margin-right: 7%;
-    margin-left: 3%;
-    width: 40%; }
-
   /* -- tablet portfolio -- */
   .portfolio-projects {
     display: flex;
     flex-wrap: wrap; }
 
-  .project {
-    max-width: 50%; }
-
   /* -- tablet contact -- */
-  .contact p {
-    width: 75%;
-    margin: auto;
-    padding-bottom: 10px;
-    font-size: 1.2em; }
-
   .contact p:nth-child(2) {
     padding-bottom: 60px; }
 
@@ -65,37 +36,12 @@
     padding-bottom: 0; }
 
   /* -- tablet footer -- */
-  footer {
-    padding-left: 64px;
-    padding-right: 64px; }
-
-  .footer-link {
-    display: none; }
-
   .main-footer,
   .footer-nav,
   .footer-name {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between; }
-
-  .footer-name {
-    margin-right: auto; }
-
-  .footer-nav {
-    align-self: center;
-    min-width: 35%;
-    max-width: 50%; }
-
-  .footer-nav li {
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-left: 30px;
-    font-size: .9em; }
-
-  .footer-nav a:visited {
-    color: #b4a8d2; } }
+    justify-content: space-between; } }
 /* ---- In-Between Screens ---- */
 /* -- fixes crowded nav menu for some screen size -- */
 @media (min-width: 900px) {
@@ -114,19 +60,6 @@
     max-width: 40%;
     padding-right: 60px; }
 
-  .intro {
-    padding-top: 60px; }
-
-  .intro img {
-    margin-left: 0; }
-
-  .intro p {
-    max-width: 75%;
-    line-height: 1.5;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-right: 0; }
-
   #hidden-intro-content {
     display: inline-block;
     padding-top: 20px; }
@@ -136,16 +69,7 @@
     display: flex;
     flex-wrap: wrap; }
 
-  .project {
-    max-width: 33%; }
-
   /* -- desktop contact -- */
-  .contact {
-    padding-bottom: 72px; }
-
-  .contact p {
-    width: 50%; }
-
   .contact p:last-child {
     padding-bottom: 0; } }
 

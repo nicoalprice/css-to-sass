@@ -13,15 +13,52 @@
     background: #b4a8d2;
     color: white;
     @extend %clearfix;
+
+    @media #{$break-medium} {
+        padding-top: 60px;
+    }
 }
 
 .intro img {
     width: 62.5%;
     max-width: 367px;
-}
+
+    @media #{$break-narrow} {
+        display: inline-block;
+        float: right;
+        padding: 0;
+        margin-right: 7%;
+        margin-left: 3%;
+        width: 40%;
+    }
+
+    @media #{$break-wide} {
+            margin-left: 0;
+        }
+    }
 
 .intro p {
     padding: 0 10px;
+
+    @media #{$break-narrow} {
+        display: inline-block;
+        float: left;
+        padding: 0;
+        margin: 0;
+        width: 40%;
+        margin-left: 7%;
+        margin-right: 3%;
+        font-size: 1.25em;
+        text-align: left;
+    }
+
+    @media #{$break-wide} {
+        max-width: 75%;
+        line-height: 1.5;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
 }
 
 #hidden-intro-content {
@@ -42,6 +79,14 @@
 
 .project {
     margin-top: 36px;
+
+    @media #{$break-narrow} {
+        max-width: 50%;
+    }
+
+    @media #{$break-wide} {
+            max-width: 33%;
+        }
 }
 
 .project a {
@@ -74,6 +119,10 @@
     padding-bottom: 54px;
     background: #ededed;
     box-shadow: 0px 3px 6px rgba(98,111,126,0.1) inset;
+
+    @media #{$break-wide} {
+        padding-bottom: 72px;
+    }
 }
 
 .contact h1 {
@@ -84,6 +133,17 @@
 .contact p {
     margin-left: 20px;
     margin-right: 20px;
+
+    @media #{$break-narrow} {
+        width: 75%;
+        margin: auto;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    @media #{$break-wide} {
+            width: 50%;
+    }
 }
 
 #phone,

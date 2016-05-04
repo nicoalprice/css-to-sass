@@ -10,6 +10,11 @@ footer {
     height: 100%;
     box-shadow: 0px 3px 6px rgba(98,111,126,0.1) inset;
     @extend %clearfix;
+
+    @media #{$break-narrow} {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }
 
 footer p {
@@ -19,12 +24,20 @@ footer p {
 .footer-name {
     float: left;
     display: inline-block;
+
+    @media #{$break-narrow} {
+        margin-right: auto;
+    }
 }
 
 .footer-link {
     float: right;
     display: inline-block;
     font-variant: small-caps;
+
+    @media #{$break-narrow} {
+        display: none;
+    }
 }
 
 footer a:visited {
@@ -33,4 +46,26 @@ footer a:visited {
 
 .footer-nav {
     display: none;
+
+    @media #{$break-narrow} {
+        align-self: center;
+        min-width: 35%;
+        max-width: 50%;
+    }
+}
+
+.footer-nav li {
+    @media #{$break-narrow} {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-size: .9em;
+    }
+}
+
+  .footer-nav a:visited {
+      @media #{$break-narrow} {
+        color: #b4a8d2;
+    }
 }
