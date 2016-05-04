@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    background: #b4a8d2;
+    background: $main-light;
     padding-top: 1em;
 
     @media #{$break-narrow} {
@@ -58,12 +58,12 @@ header {
     border-radius: 5px;
 
     @media #{$break-narrow} {
-        background: #b4a8d2;
+        background: $main-light;
     }
 }
 
 .main-nav a {
-    color: #675a85;
+    color: $main-dark;
     padding: 4px 10px; /* increase size of clickable area */
 
     @media #{$break-narrow} {
@@ -80,9 +80,9 @@ header {
 }
 
 .main-nav a:visited {
-    color: #b4a8d2;
+    color: $main-light;
 
     @media #{$break-narrow} {
-        color: #675a85;
+        color: $main-dark;
     }
 }

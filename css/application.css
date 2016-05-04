@@ -28,10 +28,11 @@ img {
   padding: 0; }
 
 /* Media Query Breakpoints */
+/* Colors */
 /* ========== HEADER ========== */
 header {
   width: 100%;
-  background: #b4a8d2;
+  background: "#lilac";
   padding-top: 1em; }
   @media (min-width: 768px) {
     header {
@@ -78,10 +79,10 @@ header {
   border-radius: 5px; }
   @media (min-width: 768px) {
     .main-nav li {
-      background: #b4a8d2; } }
+      background: "#lilac"; } }
 
 .main-nav a {
-  color: #675a85;
+  color: "#darkpurple";
   padding: 4px 10px;
   /* increase size of clickable area */ }
   @media (min-width: 768px) {
@@ -95,10 +96,10 @@ header {
       box-shadow: none; } }
 
 .main-nav a:visited {
-  color: #b4a8d2; }
+  color: "#lilac"; }
   @media (min-width: 768px) {
     .main-nav a:visited {
-      color: #675a85; } }
+      color: "#darkpurple"; } }
 
 /* ========== MAIN CONTENT ========== */
 .section-title {
@@ -109,7 +110,7 @@ header {
 .intro {
   padding-top: 42px;
   padding-bottom: 42px;
-  background: #b4a8d2;
+  background: "#lilac";
   color: white; }
   @media (min-width: 900px) {
     .intro {
@@ -170,10 +171,6 @@ header {
   .portfolio-projects {
     display: flex;
     flex-wrap: wrap; } }
-@media (min-width: 1024px) {
-  .portfolio-projects {
-    display: flex;
-    flex-wrap: wrap; } }
 
 .project {
   margin-top: 36px; }
@@ -189,7 +186,7 @@ header {
     width: 90.625%; }
 
 .project a:visited {
-  color: #675a85; }
+  color: "#darkpurple"; }
 
 .project h1 {
   margin-top: 30px;
@@ -205,12 +202,12 @@ header {
   padding-bottom: 54px;
   background: #ededed;
   box-shadow: 0px 3px 6px rgba(98, 111, 126, 0.1) inset; }
-  @media (min-width: 1024px) {
-    .contact {
-      padding-bottom: 72px; } }
   .contact h1 {
     padding-bottom: 30px;
     margin: 0; }
+  @media (min-width: 1024px) {
+    .contact {
+      padding-bottom: 72px; } }
 
 .contact p {
   margin-left: 20px;
