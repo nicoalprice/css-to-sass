@@ -1,0 +1,47 @@
+/* ========== HEADER ========== */
+
+header {
+    width: 100%;
+    background: #b4a8d2;
+    padding-top: 1em;
+}
+
+.name {
+    font-size: 2em;
+    font-family: "Special Elite";
+    padding-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px 4px #626f7e;
+}
+
+/* ----- Navigation ----- */
+
+.main-nav {
+    text-align: center;
+    width: 100%;
+}
+
+.main-nav li {
+    background: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    width: 90.625%;
+    padding: 8px 0;
+    margin-bottom: .4em;
+    border-radius: 5px;
+}
+
+.main-nav a {
+    color: #675a85;
+    padding: 4px 10px; /* increase size of clickable area */
+}
+
+.main-nav li:active {
+    box-shadow: 1px 1px 6px rgba(98,111,126,0.3) inset;
+}
+
+.main-nav a:visited {
+    color: #b4a8d2;
+}

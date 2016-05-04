@@ -1,0 +1,36 @@
+
+/* ========== FOOTER ========== */
+
+footer {
+    padding: 11px 16px;
+    margin: 0;
+    background: #36acd0;
+    color: white;
+    font-size: 1em;
+    height: 100%;
+    box-shadow: 0px 3px 6px rgba(98,111,126,0.1) inset;
+    @extend %clearfix;
+}
+
+footer p {
+    font-weight: 600;
+}
+
+.footer-name {
+    float: left;
+    display: inline-block;
+}
+
+.footer-link {
+    float: right;
+    display: inline-block;
+    font-variant: small-caps;
+}
+
+footer a:visited {
+    color: white;
+}
+
+.footer-nav {
+    display: none;
+}
