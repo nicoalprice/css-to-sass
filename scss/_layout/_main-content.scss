@@ -83,6 +83,11 @@
 }
 
 .portfolio-projects {
+    @media #{$break-narrow} {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     @media #{$break-wide} {
         display: flex;
         flex-wrap: wrap;
@@ -158,8 +163,14 @@
     }
 }
 
+.contact p:nth-child(2) {
+    @media #{$break-narrow} {
+        padding-bottom: 60px;
+    }
+}
+
   .contact p:last-child {
-      @media #{$break-wide} {
+      @media #{$break-narrow} {
         padding-bottom: 0;
     }
 }
