@@ -4,6 +4,10 @@ header {
     width: 100%;
     background: #b4a8d2;
     padding-top: 1em;
+
+    @media #{$break-narrow} {
+        padding-top: 60px;
+    }
 }
 
 .name {
@@ -12,6 +16,12 @@ header {
     padding-bottom: 10px;
     color: white;
     text-shadow: 1px 1px 4px #626f7e;
+
+    @media #{$break-wide} {
+        float: left;
+        margin: 0;
+        padding-left: 60px;
+    }
 }
 
 /* ----- Navigation ----- */
@@ -19,6 +29,21 @@ header {
 .main-nav {
     text-align: center;
     width: 100%;
+
+    @media #{$break-narrow} {
+        display: inline-flex;
+        width: 50%;
+    }
+
+@media #{$break-medium} {
+    max-width: 55%;
+    }
+
+    @media #{$break-wide} {
+        float: right;
+        max-width: 40%;
+        padding-right: 60px;
+    }
 }
 
 .main-nav li {
@@ -31,17 +56,33 @@ header {
     padding: 8px 0;
     margin-bottom: .4em;
     border-radius: 5px;
+
+    @media #{$break-narrow} {
+        background: #b4a8d2;
+    }
 }
 
 .main-nav a {
     color: #675a85;
     padding: 4px 10px; /* increase size of clickable area */
+
+    @media #{$break-narrow} {
+         color: white;
+    }
 }
 
 .main-nav li:active {
     box-shadow: 1px 1px 6px rgba(98,111,126,0.3) inset;
+
+    @media #{$break-narrow} {
+        box-shadow: none;
+    }
 }
 
 .main-nav a:visited {
     color: #b4a8d2;
+
+    @media #{$break-narrow} {
+        color: #675a85;
+    }
 }

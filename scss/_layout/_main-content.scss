@@ -63,6 +63,11 @@
 
 #hidden-intro-content {
     display: none;
+
+    @media #{$break-wide} {
+        display: inline-block;
+        padding-top: 20px;
+    }
 }
 
 /* ----- Portfolio ----- */
@@ -75,6 +80,13 @@
 
 .portfolio p {
     margin: 0 10%;
+}
+
+.portfolio-projects {
+    @media #{$break-wide} {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .project {
@@ -143,6 +155,12 @@
 
     @media #{$break-wide} {
             width: 50%;
+    }
+}
+
+  .contact p:last-child {
+      @media #{$break-wide} {
+        padding-bottom: 0;
     }
 }
 

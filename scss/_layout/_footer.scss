@@ -1,6 +1,14 @@
 
 /* ========== FOOTER ========== */
 
+  .main-footer {
+      @media #{$break-narrow} {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
 footer {
     padding: 11px 16px;
     margin: 0;
@@ -27,6 +35,9 @@ footer p {
 
     @media #{$break-narrow} {
         margin-right: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
 
@@ -51,6 +62,9 @@ footer a:visited {
         align-self: center;
         min-width: 35%;
         max-width: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
 

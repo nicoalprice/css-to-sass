@@ -8,34 +8,6 @@
 
 @media (min-width: 768px) {
 
-    /* -- tablet header -- */
-
-    header {
-        padding-top: 60px;
-    }
-
-    .main-nav {
-        display: inline-flex;
-        width: 50%;
-    }
-
-    .main-nav li {
-        background: #b4a8d2;
-    }
-
-    .main-nav li:active {
-    box-shadow: none;
-}
-
-    .main-nav a {
-        color: white;
-    }
-
-    .main-nav a:visited {
-        color: #675a85;
-    }
-
-
     /* -- tablet portfolio -- */
 
     .portfolio-projects {
@@ -43,9 +15,7 @@
         flex-wrap: wrap;
     }
 
-
     /* -- tablet contact -- */
-
 
     .contact p:nth-child(2) {
         padding-bottom: 60px;
@@ -54,67 +24,3 @@
     .contact p:last-child {
         padding-bottom: 0;
     }
-
-    /* -- tablet footer -- */
-
-
-    .main-footer,
-    .footer-nav,
-    .footer-name {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-
-}
-
-/* ---- In-Between Screens ---- */
-
-/* -- fixes crowded nav menu for some screen size -- */
-@media (min-width: 900px) {
-
-    .main-nav {
-        max-width: 55%;
-    }
-
-}
-
-/* ----- Desktops ----- */
-
-@media (min-width: 1024px) {
-
-
-    /* -- desktop header -- */
-
-    .name   {
-        float: left;
-        margin: 0;
-        padding-left: 60px;
-    }
-
-    .main-nav {
-        float: right;
-        max-width: 40%;
-        padding-right: 60px;
-    }
-
-    #hidden-intro-content {
-        display: inline-block;
-        padding-top: 20px;
-    }
-
-    /* -- desktop portfolio -- */
-
-    .portfolio-projects {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* -- desktop contact -- */
-
-
-    .contact p:last-child {
-        padding-bottom: 0;
-    }
-
-}
