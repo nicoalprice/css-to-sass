@@ -5,7 +5,17 @@ $break-narrow: '(min-width: 768px)';
 $break-medium: '(min-width: 900px)';
 $break-wide: '(min-width: 1024px)';
 
-/* Colors */
 
-$main-light: '#lilac';
-$main-dark: '#darkpurple';
+/* Color Variables */
+
+$main-light: #b4a8d2; //wistful lavender
+$main-dark: #675a85; //dolphin purple
+$background-light: #ededed; //gallery gray
+
+
+/* Font Stacks */
+
+$stack-special-elite: 'Special Elite', sans-serif;
+$stack-raleway: 'Raleway', sans-serif;
+
+
