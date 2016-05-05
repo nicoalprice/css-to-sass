@@ -5,7 +5,7 @@ header {
     background: $main-light;
     padding-top: 1em;
 
-    @media #{$break-narrow} {
+    @include tablet {
         padding-top: 60px;
     }
 }
@@ -17,7 +17,7 @@ header {
     color: white;
     text-shadow: 1px 1px 4px #626f7e;
 
-    @media #{$break-wide} {
+    @include desktop {
         float: left;
         margin: 0;
         padding-left: 60px;
@@ -30,16 +30,16 @@ header {
     text-align: center;
     width: 100%;
 
-    @media #{$break-narrow} {
+    @include tablet {
         display: inline-flex;
         width: 50%;
     }
 
-@media #{$break-medium} {
-    max-width: 55%;
-    }
+    @include medium-screen {
+        max-width: 55%;
+        }
 
-    @media #{$break-wide} {
+    @include desktop {
         float: right;
         max-width: 40%;
         padding-right: 60px;
@@ -57,7 +57,7 @@ header {
     margin-bottom: .4em;
     border-radius: 5px;
 
-    @media #{$break-narrow} {
+    @include tablet {
         background: $main-light;
     }
 }
@@ -66,7 +66,7 @@ header {
     color: $main-dark;
     padding: 4px 10px; /* increase size of clickable area */
 
-    @media #{$break-narrow} {
+    @include tablet {
          color: white;
     }
 }
@@ -74,7 +74,7 @@ header {
 .main-nav li:active {
     box-shadow: 1px 1px 6px rgba(98,111,126,0.3) inset;
 
-    @media #{$break-narrow} {
+    @include tablet {
         box-shadow: none;
     }
 }
@@ -82,7 +82,7 @@ header {
 .main-nav a:visited {
     color: $main-light;
 
-    @media #{$break-narrow} {
+    @include tablet {
         color: $main-dark;
     }
 }

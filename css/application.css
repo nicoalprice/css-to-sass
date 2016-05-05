@@ -2,6 +2,7 @@
 /* Media Query Breakpoints */
 /* Color Variables */
 /* Font Stacks */
+/* Media Queries */
 /* ========== GENERAL STYLES ========== */
 * {
   /*    border: 1px red dotted;   for testing */
@@ -35,7 +36,7 @@ header {
   width: 100%;
   background: #b4a8d2;
   padding-top: 1em; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     header {
       padding-top: 60px; } }
 
@@ -45,7 +46,7 @@ header {
   padding-bottom: 10px;
   color: white;
   text-shadow: 1px 1px 4px #626f7e; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .name {
       float: left;
       margin: 0;
@@ -55,14 +56,14 @@ header {
 .main-nav {
   text-align: center;
   width: 100%; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .main-nav {
       display: inline-flex;
       width: 50%; } }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     .main-nav {
       max-width: 55%; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .main-nav {
       float: right;
       max-width: 40%;
@@ -78,7 +79,7 @@ header {
   padding: 8px 0;
   margin-bottom: .4em;
   border-radius: 5px; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .main-nav li {
       background: #b4a8d2; } }
 
@@ -86,19 +87,19 @@ header {
   color: #675a85;
   padding: 4px 10px;
   /* increase size of clickable area */ }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .main-nav a {
       color: white; } }
 
 .main-nav li:active {
   box-shadow: 1px 1px 6px rgba(98, 111, 126, 0.3) inset; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .main-nav li:active {
       box-shadow: none; } }
 
 .main-nav a:visited {
   color: #b4a8d2; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .main-nav a:visited {
       color: #675a85; } }
 
@@ -113,14 +114,14 @@ header {
   padding-bottom: 42px;
   background: #b4a8d2;
   color: white; }
-  @media (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     .intro {
       padding-top: 60px; } }
 
 .intro img {
   width: 62.5%;
   max-width: 367px; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .intro img {
       display: inline-block;
       float: right;
@@ -128,13 +129,13 @@ header {
       margin-right: 7%;
       margin-left: 3%;
       width: 40%; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .intro img {
       margin-left: 0; } }
 
 .intro p {
   padding: 0 10px; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .intro p {
       display: inline-block;
       float: left;
@@ -145,7 +146,7 @@ header {
       margin-right: 3%;
       font-size: 1.25em;
       text-align: left; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .intro p {
       max-width: 75%;
       line-height: 1.5;
@@ -155,7 +156,7 @@ header {
 
 #hidden-intro-content {
   display: none; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     #hidden-intro-content {
       display: inline-block;
       padding-top: 20px; } }
@@ -168,17 +169,17 @@ header {
   .portfolio p {
     margin: 0 10%; }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio-projects {
     display: flex;
     flex-wrap: wrap; } }
 
 .project {
   margin-top: 36px; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .project {
       max-width: 50%; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .project {
       max-width: 33%; } }
   .project a {
@@ -206,28 +207,28 @@ header {
   .contact h1 {
     padding-bottom: 30px;
     margin: 0; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .contact {
       padding-bottom: 72px; } }
 
 .contact p {
   margin-left: 20px;
   margin-right: 20px; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .contact p {
       width: 75%;
       margin: auto;
       padding-bottom: 10px;
       font-size: 1.2em; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .contact p {
       width: 50%; } }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact p:nth-child(2) {
     padding-bottom: 60px; } }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact p:last-child {
     padding-bottom: 0; } }
 
@@ -237,7 +238,7 @@ header {
   padding-left: .8em; }
 
 /* ========== FOOTER ========== */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .main-footer {
     display: flex;
     flex-flow: row nowrap;
@@ -251,7 +252,7 @@ footer {
   font-size: 1em;
   height: 100%;
   box-shadow: 0px 3px 6px rgba(98, 111, 126, 0.1) inset; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     footer {
       padding-left: 64px;
       padding-right: 64px; } }
@@ -261,7 +262,7 @@ footer {
 .footer-name {
   float: left;
   display: inline-block; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .footer-name {
       margin-right: auto;
       display: flex;
@@ -272,7 +273,7 @@ footer {
   float: right;
   display: inline-block;
   font-variant: small-caps; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .footer-link {
       display: none; } }
 
@@ -281,7 +282,7 @@ footer a:visited {
 
 .footer-nav {
   display: none; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .footer-nav {
       align-self: center;
       min-width: 35%;
@@ -290,7 +291,7 @@ footer a:visited {
       flex-flow: row nowrap;
       justify-content: space-between; } }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-nav li {
     color: white;
     font-weight: 600;
@@ -298,7 +299,7 @@ footer a:visited {
     padding-left: 30px;
     font-size: .9em; } }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-nav a:visited {
     color: #b4a8d2; } }
 

@@ -14,7 +14,7 @@
     color: white;
     @extend %clearfix;
 
-    @media #{$break-medium} {
+    @include medium-screen {
         padding-top: 60px;
     }
 }
@@ -23,7 +23,7 @@
     width: 62.5%;
     max-width: 367px;
 
-    @media #{$break-narrow} {
+    @include tablet {
         display: inline-block;
         float: right;
         padding: 0;
@@ -32,7 +32,7 @@
         width: 40%;
     }
 
-    @media #{$break-wide} {
+    @include desktop {
             margin-left: 0;
         }
     }
@@ -40,7 +40,7 @@
 .intro p {
     padding: 0 10px;
 
-    @media #{$break-narrow} {
+    @include tablet {
         display: inline-block;
         float: left;
         padding: 0;
@@ -52,7 +52,7 @@
         text-align: left;
     }
 
-    @media #{$break-wide} {
+    @include desktop {
         max-width: 75%;
         line-height: 1.5;
         padding-bottom: 0;
@@ -64,7 +64,7 @@
 #hidden-intro-content {
     display: none;
 
-    @media #{$break-wide} {
+    @include desktop {
         display: inline-block;
         padding-top: 20px;
     }
@@ -83,7 +83,7 @@
 }
 
 .portfolio-projects {
-    @media #{$break-narrow} {
+    @include tablet {
         display: flex;
         flex-wrap: wrap;
     }
@@ -92,11 +92,11 @@
 .project {
     margin-top: 36px;
 
-    @media #{$break-narrow} {
+    @include tablet {
         max-width: 50%;
     }
 
-    @media #{$break-wide} {
+    @include desktop {
         max-width: 33%;
         }
 
@@ -137,7 +137,7 @@
         margin: 0;
     }
 
-    @media #{$break-wide} {
+    @include desktop {
         padding-bottom: 72px;
     }
 
@@ -147,33 +147,31 @@
     margin-left: 20px;
     margin-right: 20px;
 
-    @media #{$break-narrow} {
+    @include tablet {
         width: 75%;
         margin: auto;
         padding-bottom: 10px;
         font-size: 1.2em;
     }
 
-    @media #{$break-wide} {
+    @include desktop {
         width: 50%;
     }
 }
 
 .contact p:nth-child(2) {
-    @media #{$break-narrow} {
+    @include tablet {
         padding-bottom: 60px;
     }
 }
 
   .contact p:last-child {
-      @media #{$break-narrow} {
+      @include tablet {
         padding-bottom: 0;
     }
 }
 
 #phone,
-#email
-  {
-    font-weight: 600;
-    padding-left: .8em;
+#email {
+    @include contact-info;
 }
