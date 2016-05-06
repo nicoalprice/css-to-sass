@@ -5,19 +5,19 @@ header {
     background: $main-light;
     padding-top: 1em;
 
-    @include tablet {
+    @include media-query(tablet) {
         padding-top: 60px;
     }
 }
 
 .name {
-    font-size: 2em;
+    font-size: $main-header;
     font-family: $stack-special-elite;
     padding-bottom: 10px;
     color: white;
     text-shadow: 1px 1px 4px #626f7e;
 
-    @include desktop {
+    @include media-query(large) {
         float: left;
         margin: 0;
         padding-left: 60px;
@@ -30,16 +30,16 @@ header {
     text-align: center;
     width: 100%;
 
-    @include tablet {
+    @include media-query(tablet) {
         display: inline-flex;
         width: 50%;
     }
 
-    @include medium-screen {
+    @include media-query(medium) {
         max-width: 55%;
         }
 
-    @include desktop {
+    @include media-query(large) {
         float: right;
         max-width: 40%;
         padding-right: 60px;
@@ -57,7 +57,7 @@ header {
     margin-bottom: .4em;
     border-radius: 5px;
 
-    @include tablet {
+    @include media-query(tablet) {
         background: $main-light;
     }
 }
@@ -66,15 +66,15 @@ header {
     color: $main-dark;
     padding: 4px 10px; /* increase size of clickable area */
 
-    @include tablet {
-         color: white;
+    @include media-query(tablet) {
+         color: $text-light;
     }
 }
 
 .main-nav li:active {
     box-shadow: 1px 1px 6px rgba(98,111,126,0.3) inset;
 
-    @include tablet {
+    @include media-query(tablet) {
         box-shadow: none;
     }
 }
@@ -82,7 +82,7 @@ header {
 .main-nav a:visited {
     color: $main-light;
 
-    @include tablet {
+    @include media-query(tablet) {
         color: $main-dark;
     }
 }

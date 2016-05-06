@@ -1,25 +1,34 @@
-@mixin contact-info {
-    font-weight: 600;
-    padding-left: .8em;
-}
+/* --- MEDIA QUERIES --- */
 
+/* Breakpoints */
 
-/* Media Queries */
+$break-tablet: 768px;
+$break-medium: 900px;
+$break-wide: 1024px;
 
-@mixin tablet {
-    @media screen and (min-width: #{$break-narrow}) {
-        @content;
+/* Mixins */
+
+@mixin media-query($screen-size) {
+    @if $screen-size == tablet {
+        @media screen and (min-width: #{$break-tablet}) {
+            @content;
+        }
+    }
+    @else if $screen-size == medium {
+        @media screen and (min-width: #{$break-medium}) {
+            @content;
+        }
+    }
+
+    @else if $screen-size == large {
+        @media screen and (min-width: #{$break-wide}) {
+            @content;
+        }
     }
 }
 
-@mixin medium-screen {
-    @media screen and (min-width: #{$break-medium}) {
-        @content;
-    }
-}
+/* BOX SHADOW */
 
-@mixin desktop {
-    @media screen and (min-width: #{$break-wide}) {
-        @content;
-    }
-}
+/*@mixin box-shadow() {
+
+}*/

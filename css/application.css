@@ -1,11 +1,27 @@
 /* Global Imports */
-/* Media Query Breakpoints */
 /* Color Variables */
 /* Font Stacks */
-/* Media Queries */
+/* Font Sizes */
+/* --- Clearfix --- */
+.intro::after, footer::after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/*--- Contact Styles ---*/
+#phone, #email {
+  font-weight: 600;
+  padding-left: .8em; }
+
+/* --- MEDIA QUERIES --- */
+/* Breakpoints */
+/* Mixins */
+/* BOX SHADOW */
+/*@mixin box-shadow() {
+
+}*/
 /* ========== GENERAL STYLES ========== */
 * {
-  /*    border: 1px red dotted;   for testing */
   box-sizing: border-box; }
 
 body {
@@ -104,10 +120,6 @@ header {
       color: #675a85; } }
 
 /* ========== MAIN CONTENT ========== */
-.section-title {
-  font-size: 1em;
-  text-transform: uppercase; }
-
 /* ----- Intro ----- */
 .intro {
   padding-top: 42px;
@@ -232,11 +244,6 @@ header {
   .contact p:last-child {
     padding-bottom: 0; } }
 
-#phone,
-#email {
-  font-weight: 600;
-  padding-left: .8em; }
-
 /* ========== FOOTER ========== */
 @media screen and (min-width: 768px) {
   .main-footer {
@@ -303,15 +310,13 @@ footer a:visited {
   .footer-nav a:visited {
     color: #b4a8d2; } }
 
-/* ========== CLEARFIX ========== */
-.intro::after, footer::after {
-  content: " ";
-  display: table;
-  clear: both; }
-
 /* ========== FONTS ========== */
 @font-face {
   font-family: "Special Elite", sans-serif;
   font-family: stack-raleway; }
+/* Text Styles */
+.section-title {
+  font-size: 1em;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=application.css.map */

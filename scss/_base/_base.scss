@@ -1,7 +1,6 @@
 /* ========== GENERAL STYLES ========== */
 
 * {
-/*    border: 1px red dotted;   for testing */
     box-sizing: border-box;
 }
 
@@ -9,13 +8,13 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #626f7e;
+    color: $text-color;
     height: 100%;
     font-family: $stack-raleway;
 }
 
 h1 {
-    font-size: 1em;
+    font-size: $section-headings;
 }
 
 a {

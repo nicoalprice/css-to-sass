@@ -1,8 +1,7 @@
 /* ========== MAIN CONTENT ========== */
 
 .section-title {
-    font-size: 1em;
-    text-transform: uppercase;
+    @extend %section-titles;
 }
 
 /* ----- Intro ----- */
@@ -14,7 +13,7 @@
     color: white;
     @extend %clearfix;
 
-    @include medium-screen {
+    @include media-query(medium) {
         padding-top: 60px;
     }
 }
@@ -23,7 +22,7 @@
     width: 62.5%;
     max-width: 367px;
 
-    @include tablet {
+    @include media-query(tablet) {
         display: inline-block;
         float: right;
         padding: 0;
@@ -32,7 +31,7 @@
         width: 40%;
     }
 
-    @include desktop {
+    @include media-query(large) {
             margin-left: 0;
         }
     }
@@ -40,7 +39,7 @@
 .intro p {
     padding: 0 10px;
 
-    @include tablet {
+    @include media-query(tablet) {
         display: inline-block;
         float: left;
         padding: 0;
@@ -52,7 +51,7 @@
         text-align: left;
     }
 
-    @include desktop {
+    @include media-query(large) {
         max-width: 75%;
         line-height: 1.5;
         padding-bottom: 0;
@@ -64,7 +63,7 @@
 #hidden-intro-content {
     display: none;
 
-    @include desktop {
+    @include media-query(large) {
         display: inline-block;
         padding-top: 20px;
     }
@@ -83,7 +82,7 @@
 }
 
 .portfolio-projects {
-    @include tablet {
+    @include media-query(tablet) {
         display: flex;
         flex-wrap: wrap;
     }
@@ -92,11 +91,11 @@
 .project {
     margin-top: 36px;
 
-    @include tablet {
+    @include media-query(tablet) {
         max-width: 50%;
     }
 
-    @include desktop {
+    @include media-query(large) {
         max-width: 33%;
         }
 
@@ -137,7 +136,7 @@
         margin: 0;
     }
 
-    @include desktop {
+    @include media-query(large) {
         padding-bottom: 72px;
     }
 
@@ -147,31 +146,34 @@
     margin-left: 20px;
     margin-right: 20px;
 
-    @include tablet {
+    @include media-query(tablet) {
         width: 75%;
         margin: auto;
         padding-bottom: 10px;
         font-size: 1.2em;
     }
 
-    @include desktop {
+    @include media-query(large) {
         width: 50%;
     }
 }
 
 .contact p:nth-child(2) {
-    @include tablet {
+    @include media-query(tablet) {
         padding-bottom: 60px;
     }
 }
 
   .contact p:last-child {
-      @include tablet {
+      @include media-query(tablet) {
         padding-bottom: 0;
     }
 }
 
-#phone,
+#phone {
+    @extend %contact-info;
+}
+
 #email {
-    @include contact-info;
+    @extend %contact-info;
 }

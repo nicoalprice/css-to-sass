@@ -1,16 +1,11 @@
 
-/* Media Query Breakpoints */
-
-$break-narrow: 768px;
-$break-medium: 900px;
-$break-wide: 1024px;
-
-
 /* Color Variables */
 
 $main-light: #b4a8d2; //wistful lavender
 $main-dark: #675a85; //dolphin purple
-$background-light: #ededed; //gallery gray
+$background-light: #ededed; //gallery
+$text-color: #626f7e;
+$text-light: white;
 
 
 /* Font Stacks */
@@ -18,4 +13,11 @@ $background-light: #ededed; //gallery gray
 $stack-special-elite: 'Special Elite', sans-serif;
 $stack-raleway: 'Raleway', sans-serif;
 
+
+/* Font Sizes */
+
+$main-header: 2em;
+$section-headings: 1em;
+//$main-text: ;
+//$project-heading: ;
 
