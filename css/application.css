@@ -2,6 +2,14 @@
 /* Color Variables */
 /* Font Stacks */
 /* Font Sizes */
+/* --- MEDIA QUERIES --- */
+/* Breakpoints */
+/* Mixins */
+/* BOX SHADOW */
+/*@mixin box-shadow() {
+
+}*/
+/* IMAGE FILE PATHS */
 /* --- Clearfix --- */
 .intro::after, footer::after {
   content: " ";
@@ -13,14 +21,6 @@
   font-weight: 600;
   padding-left: .8em; }
 
-/* --- MEDIA QUERIES --- */
-/* Breakpoints */
-/* Mixins */
-/* BOX SHADOW */
-/*@mixin box-shadow() {
-
-}*/
-/* IMAGE FILE PATHS */
 /* ========== GENERAL STYLES ========== */
 * {
   box-sizing: border-box; }
