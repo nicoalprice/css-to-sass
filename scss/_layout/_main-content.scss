@@ -32,9 +32,9 @@
     }
 
     @include media-query(large) {
-            margin-left: 0;
+        margin-left: 0;
         }
-    }
+}
 
 .intro p {
     padding: 0 10px;
@@ -114,8 +114,7 @@
 
 .project h1 {
     margin-top: 30px;
-    font-size: 1.2em;
-    font-weight: 500;
+    @extend %project-titles;
 }
 
 .project img:hover {
@@ -164,7 +163,7 @@
     }
 }
 
-  .contact p:last-child {
+.contact p:last-child {
       @include media-query(tablet) {
         padding-bottom: 0;
     }
