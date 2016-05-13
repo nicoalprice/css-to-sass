@@ -23,7 +23,7 @@ a {
 
 img {
     border-radius: 5px;
-    box-shadow: 2px 4px 10px 0 rgba(98,111,126,0.8);
+    @include img-box-shadow;
 }
 
 .wrapper {

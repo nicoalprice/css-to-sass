@@ -25,4 +25,16 @@ $break-wide: 1024px;
     }
 }
 
-// add additional mixin for exceeds expectations
+/* --- BOX SHADOW --- */
+
+@mixin img-box-shadow {
+    box-shadow: 2px 4px 10px 0 rgba($shadow,0.8)
+}
+
+/* --- FLEX --- */
+
+@mixin flex-properties {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}

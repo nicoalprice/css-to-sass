@@ -11,7 +11,7 @@
 /*--- Contact Styles ---*/
 
 %contact-info {
-    font-weight: 600;
+    @extend %bold-font;
     padding-left: .8em;
 }
 

@@ -19,8 +19,11 @@ $section-headings: 1em;
     text-transform: uppercase;
 }
 
-
 %project-titles {
     font-size: 1.2em;
     font-weight: 500;
+}
+
+%bold-font {
+    font-weight: 600;
 }

@@ -3,20 +3,18 @@
 
   .main-footer {
     @include media-query(tablet) {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        @include flex-properties;
     }
 }
 
 footer {
     padding: 11px 16px;
     margin: 0;
-    background: #36acd0;
+    background: $footer-background;
     color: white;
     font-size: 1em;
     height: 100%;
-    box-shadow: 0px 3px 6px rgba(98,111,126,0.1) inset;
+    box-shadow: 0px 3px 6px rgba($shadow,0.1) inset;
     @extend %clearfix;
 
     @include media-query(tablet) {
@@ -35,9 +33,7 @@ footer {
 
     @include media-query(tablet) {
         margin-right: auto;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        @include flex-properties;
     }
 }
 
@@ -62,9 +58,7 @@ footer a:visited {
         align-self: center;
         min-width: 35%;
         max-width: 50%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        @include flex-properties;
     }
 }
 
@@ -80,6 +74,6 @@ footer a:visited {
 
   .footer-nav a:visited {
       @include media-query(tablet) {
-        color: #b4a8d2;
+        color: $main-light;
     }
 }
