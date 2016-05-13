@@ -15,7 +15,7 @@ header {
     font-size: $main-header;
     font-family: $stack-special-elite;
     padding-bottom: 10px;
-    color: white;
+    color: $light-text;
     text-shadow: 1px 1px 4px $shadow;
 
     @include media-query(large) {
@@ -70,7 +70,7 @@ header {
 
 .main-nav li {
     background: white;
-    font-weight: 600;
+    font-weight: $bold-font;
     text-transform: uppercase;
     text-align: center;
     display: inline-block;

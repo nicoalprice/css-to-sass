@@ -8,11 +8,12 @@ $stack-raleway: 'Raleway', sans-serif;
 /* Font Sizes */
 
 $main-header: 2em;
+$secondary-header: 1.2em;
 $section-headings: 1em;
-//$main-text: ;
-//$project-heading: ;
+$default-text: 1em;
+$smaller-text: .9em;
 
-/* Text Styles */
+/* Font Styles */
 
 %section-titles {
     font-size: 1em;
@@ -24,6 +25,4 @@ $section-headings: 1em;
     font-weight: 500;
 }
 
-%bold-font {
-    font-weight: 600;
-}
+$bold-font: 600;

@@ -100,7 +100,7 @@
         }
 
     a {
-        color: #626f7e;
+        color: $link;
     }
 
     img {
@@ -149,7 +149,7 @@
         width: 75%;
         margin: auto;
         padding-bottom: 10px;
-        font-size: 1.2em;
+        font-size: $secondary-header;
     }
 
     @include media-query(large) {
