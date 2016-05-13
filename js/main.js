@@ -1,6 +1,6 @@
-// listen for when user clicks on hamburger icon
-$().on('click', function(){
-    // if menu is closed, slide down
-    // if menu is opened, slide up
+/* listen for when user clicks on hamburger icon */
+$('.hamburger').on('click', function(){
+    // show menu
+    $('.main-nav').toggleClass('open');
 });
 
