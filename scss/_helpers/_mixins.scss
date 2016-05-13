@@ -6,8 +6,6 @@ $break-tablet: 768px;
 $break-medium: 900px;
 $break-wide: 1024px;
 
-/* Mixins */
-
 @mixin media-query($screen-size) {
     @if $screen-size == tablet {
         @media screen and (min-width: #{$break-tablet}) {
@@ -27,8 +25,4 @@ $break-wide: 1024px;
     }
 }
 
-/* BOX SHADOW */
-
-/*@mixin box-shadow() {
-
-}*/
+// add additional mixin for exceeds expectations

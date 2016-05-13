@@ -1,14 +1,7 @@
 /* Global Imports */
 /* Color Variables */
-/* Font Stacks */
-/* Font Sizes */
 /* --- MEDIA QUERIES --- */
 /* Breakpoints */
-/* Mixins */
-/* BOX SHADOW */
-/*@mixin box-shadow() {
-
-}*/
 /* --- Clearfix --- */
 header::after, .intro::after, footer::after {
   content: " ";
@@ -19,6 +12,18 @@ header::after, .intro::after, footer::after {
 #phone, #email {
   font-weight: 600;
   padding-left: .8em; }
+
+/* ========== FONTS ========== */
+/* Font Stacks */
+/* Font Sizes */
+/* Text Styles */
+.section-title {
+  font-size: 1em;
+  text-transform: uppercase; }
+
+.project h1 {
+  font-size: 1.2em;
+  font-weight: 500; }
 
 /* ========== GENERAL STYLES ========== */
 * {
@@ -324,18 +329,5 @@ footer a:visited {
 @media screen and (min-width: 768px) {
   .footer-nav a:visited {
     color: #b4a8d2; } }
-
-/* ========== FONTS ========== */
-@font-face {
-  font-family: "Special Elite", sans-serif;
-  font-family: stack-raleway; }
-/* Text Styles */
-.section-title {
-  font-size: 1em;
-  text-transform: uppercase; }
-
-.project h1 {
-  font-size: 1.2em;
-  font-weight: 500; }
 
 /*# sourceMappingURL=application.css.map */

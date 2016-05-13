@@ -1,9 +1,16 @@
 /* ========== FONTS ========== */
 
-@font-face {
-    font-family: $stack-special-elite;
-    font-family: stack-raleway;
-}
+/* Font Stacks */
+
+$stack-special-elite: 'Special Elite', sans-serif;
+$stack-raleway: 'Raleway', sans-serif;
+
+/* Font Sizes */
+
+$main-header: 2em;
+$section-headings: 1em;
+//$main-text: ;
+//$project-heading: ;
 
 /* Text Styles */
 
