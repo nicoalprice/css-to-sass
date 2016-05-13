@@ -1,6 +1,7 @@
 /* ========== HEADER ========== */
 
 header {
+    @extend %clearfix;
     width: 100%;
     background: $main-light;
     padding-top: 1em;

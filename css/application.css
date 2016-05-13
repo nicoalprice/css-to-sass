@@ -9,9 +9,8 @@
 /*@mixin box-shadow() {
 
 }*/
-/* IMAGE FILE PATHS */
 /* --- Clearfix --- */
-.intro::after, footer::after {
+header::after, .intro::after, footer::after {
   content: " ";
   display: table;
   clear: both; }
