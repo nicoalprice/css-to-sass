@@ -64,7 +64,7 @@ footer a:visited {
 
 .footer-nav li {
     @include media-query(tablet) {
-        color: white;
+        color: $text-light;
         font-weight: 600;
         text-transform: uppercase;
         padding-left: 30px;
