@@ -5,10 +5,16 @@
 $stack-special-elite: 'Special Elite', sans-serif;
 $stack-raleway: 'Raleway', sans-serif;
 
+// Font Categories //
+
+$main-font: $stack-raleway;
+$decorative-font: $stack-special-elite;
+
 // Font Sizes //
 
 $main-header: 2em;
 $secondary-header: 1.2em;
+$larger-text: 1.25em;
 $section-headings: 1em;
 $default-text: 1em;
 $smaller-text: .9em;

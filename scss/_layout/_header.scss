@@ -13,7 +13,7 @@ header {
 
 .name {
     font-size: $main-header;
-    font-family: $stack-special-elite;
+    font-family: $decorative-font;
     padding-bottom: 10px;
     color: $text-light;
     text-shadow: 1px 1px 4px $shadow;
@@ -68,7 +68,7 @@ header {
 }
 
 .main-nav li {
-    background: white;
+    background: $text-light;
     font-weight: $bold-font;
     text-transform: uppercase;
     text-align: center;
@@ -93,7 +93,7 @@ header {
 }
 
 .main-nav li:active {
-    @extend %shadow-divider;;
+    @extend %shadow-divider;
 
     @include media-query(tablet) {
         box-shadow: none;

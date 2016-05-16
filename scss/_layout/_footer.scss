@@ -23,7 +23,7 @@ footer {
     }
 
     p {
-        font-weight: 600;
+        font-weight: $bold-font;
     }
 }
 
@@ -48,7 +48,7 @@ footer {
 }
 
 footer a:visited {
-    color: white;
+    color: $text-light;
 }
 
 .footer-nav {

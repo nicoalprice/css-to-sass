@@ -11,7 +11,7 @@
     padding-top: 42px;
     padding-bottom: 42px;
     background: $main-light;
-    color: white;
+    color: $text-light;
 
     @include media-query(medium) {
         padding-top: 60px;
@@ -47,7 +47,7 @@
         width: 40%;
         margin-left: 7%;
         margin-right: 3%;
-        font-size: 1.25em;
+        font-size: $larger-text;
         text-align: left;
     }
 
