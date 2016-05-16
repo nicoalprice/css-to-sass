@@ -1,6 +1,6 @@
-/* --- MEDIA QUERIES --- */
+//--- MEDIA QUERIES --- //
 
-/* Breakpoints */
+// Breakpoints //
 
 $break-tablet: 768px;
 $break-medium: 900px;
@@ -25,13 +25,13 @@ $break-wide: 1024px;
     }
 }
 
-/* --- BOX SHADOW --- */
+// --- BOX SHADOW --- //
 
-@mixin img-box-shadow {
-    box-shadow: 2px 4px 10px 0 rgba($shadow,0.8)
+@mixin box-shadow($offset-x, $offset-y, $blur, $spread, $color, $opacity) {
+    box-shadow: $offset-x $offset-y $blur $spread rgba($color, $opacity);
 }
 
-/* --- FLEX --- */
+// --- FLEX --- //
 
 @mixin flex-properties {
     display: flex;

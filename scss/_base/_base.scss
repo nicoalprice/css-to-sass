@@ -23,7 +23,7 @@ a {
 
 img {
     border-radius: 5px;
-    @include img-box-shadow;
+    @include box-shadow(2px, 4px, 10px, 0, $shadow, 0.8);
 }
 
 .wrapper {

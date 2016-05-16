@@ -43,14 +43,13 @@ header {
 .main-nav {
     text-align: center;
     width: 100%;
-    height: 0; /* hide menu by default */
-    overflow: hidden; /* hide menu by default */
+    @extend %hide-menu; /* hide menu by default */
 
 
     @include media-query(tablet) {
         display: inline-flex;
         width: 50%;
-        height: 123px;
+        height: $menu-height;
     }
 
     @include media-query(medium) {
@@ -65,7 +64,7 @@ header {
 }
 
 .open {
-    height: 123px; /* display mobile menu when hamburger icon is clicked */
+    height: $menu-height; /* display mobile menu when hamburger is clicked */
 }
 
 .main-nav li {
@@ -89,12 +88,12 @@ header {
     padding: 4px 10px; /* increase size of clickable area */
 
     @include media-query(tablet) {
-         color: $main-light;
+        color: $main-light;
     }
 }
 
 .main-nav li:active {
-    box-shadow: 1px 1px 6px rgba($shadow,0.3) inset;
+    @extend %shadow-divider;;
 
     @include media-query(tablet) {
         box-shadow: none;

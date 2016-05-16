@@ -1,4 +1,4 @@
-/* --- Clearfix --- */
+//--- Clearfix ---//
 
 %clearfix {
     &::after {
@@ -8,11 +8,21 @@
     }
 }
 
-/*--- Contact Styles ---*/
+//--- Contact Styles ---//
 
 %contact-info {
     font-weight: $bold-font;
     padding-left: .8em;
 }
 
-// add additional extends/placeholder for exceeds expectations
+//--- Hide Content ---//
+
+%hide-menu {
+    height: 0; // hide menu by default //
+    overflow: hidden; // hide menu by default //
+}
+
+//--- Section Divider ---//
+%shadow-divider {
+    box-shadow: 0 3px 6px rgba($shadow, 0.1) inset;
+}
