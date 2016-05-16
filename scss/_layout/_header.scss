@@ -88,7 +88,7 @@ header {
     padding: 4px 10px; /* increase size of clickable area */
 
     @include media-query(tablet) {
-        color: $main-light;
+        color: $text-light;
     }
 }
 
