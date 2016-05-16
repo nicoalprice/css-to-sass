@@ -73,7 +73,7 @@ footer a:visited {
 }
 
   .footer-nav a:visited {
-      @include media-query(tablet) {
+    @include media-query(tablet) {
         color: $main-light;
     }
 }

@@ -94,7 +94,7 @@ header {
 }
 
 .main-nav li:active {
-    box-shadow: 1px 1px 6px rgba(98,111,126,0.3) inset;
+    box-shadow: 1px 1px 6px rgba($shadow,0.3) inset;
 
     @include media-query(tablet) {
         box-shadow: none;
